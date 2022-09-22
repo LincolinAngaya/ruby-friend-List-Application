@@ -1,5 +1,5 @@
-<h2>Sign up</h2>
-
+<div class="card">
+ <div class="card-header"><h2>Sign up</h2></div>
 <div class="jumbotron">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -21,6 +21,7 @@
 
   <div class="actions">
     <%= f.submit "Sign up",  class:"btn btn-success btn-sm" %>
+  </div>
   </div>
   <br />
 <% end %>
