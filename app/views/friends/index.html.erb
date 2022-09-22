@@ -1,14 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Friends List</h1>
+<h1>Friend List</h1>
 
-<div id="friends">
+<div class="jumbotron" id="friends">
   <% @friends.each do |friend| %>
     <%= render friend %>
     <p>
-      <%= link_to "Show this friend", friend %>
+     <br/>
     </p>
   <% end %>
+  <%= link_to "New friend", new_friend_path %>
 </div>
 
-<%= link_to "New friend", new_friend_path %>
+

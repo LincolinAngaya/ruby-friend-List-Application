@@ -1,27 +1,30 @@
-<div id="<%= dom_id friend %>">
-  <p>
+<ul class="list-group" id="<%= dom_id friend %>">
+<li class="list-group-item">
     <strong>First name:</strong>
     <%= friend.first_name %>
-  </p>
+  </li>
 
-  <p>
+  <li class="list-group-item">
     <strong>Last name:</strong>
     <%= friend.last_name %>
-  </p>
+  </li>
+    
 
-  <p>
+    <li class="list-group-item">
     <strong>Email:</strong>
     <%= friend.email %>
-  </p>
+  </li>
 
-  <p>
+  <li class="list-group-item">
     <strong>Phone:</strong>
     <%= friend.phone %>
-  </p>
+  </li>
 
-  <p>
+  <li class="list-group-item">
     <strong>Twitter:</strong>
     <%= friend.twitter %>
-  </p>
-
-</div>
+  </li>
+  <li class="list-group-item">
+  <%= link_to "Show this friend", friend %>
+  </li>
+</ul>
