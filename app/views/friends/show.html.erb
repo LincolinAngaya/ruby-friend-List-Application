@@ -11,5 +11,8 @@
   
  
 </div>
-<%= button_to "Delete", @friend, method: :delete, class:"btn btn-danger btn-sm" %>
+<br />
+<div>
+<%= button_to "Delete", @friend, method: :delete, data: {confirm: 'Are you sure ?'}, class:"btn btn-danger btn-sm" %>
 
+</div>
